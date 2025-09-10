@@ -27,28 +27,20 @@ This project is a simple Bash script to detect brute-force attacks on an SSH ser
    crontab -e
    */5 * * * * /home/kali/log_monitor.sh
 
-⚡ How It Works
+**⚡ How It Works**
 
-Script monitors journalctl logs for failed SSH logins.
+- Script monitors journalctl logs for failed SSH logins.
+- Counts failed attempts from each IP.
+- If attempts exceed threshold → generates alert message.
+- Alerts are stored in ssh_alerts.log.
+- Cron runs the script automatically at scheduled times.
 
-Counts failed attempts from each IP.
+**Results**
+- Successfully detected brute force attempts.
+- Automatically generated logs in ssh_alerts.log.
+- Cron ensured continuous monitoring without manual effort.
 
-If attempts exceed threshold → generates alert message.
+**📂 Project Files**
 
-Alerts are stored in ssh_alerts.log.
-
-Cron runs the script automatically at scheduled times.
-
-Results
-
-Successfully detected brute force attempts.
-
-Automatically generated logs in ssh_alerts.log.
-
-Cron ensured continuous monitoring without manual effort.
-
-📂 Project Files
-
-log_monitor.sh → Main script to detect brute force attempts.
-
-ssh_bruteforce_detection.pdf → Project Report with detailed steps.
+- log_monitor.sh → Main script to detect brute force attempts.
+- ssh_bruteforce_detection.pdf → Project Report with detailed steps.
