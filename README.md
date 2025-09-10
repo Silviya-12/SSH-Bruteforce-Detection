@@ -1,7 +1,7 @@
-# SSH Brute Force Detection Script 🔐
+# SSH Brute Force Detection  🔐
 
 ## 📌 Introduction
-This project is a simple Bash script to detect brute-force attacks on an SSH server by monitoring failed login attempts from **systemd journal logs**.
+This project is a simple Bash script to detect brute-force attacks on an SSH server by monitoring failed login attempts from systemd journal logs.
 
 ## 🎯 Objective
 - Identify suspicious SSH login attempts
