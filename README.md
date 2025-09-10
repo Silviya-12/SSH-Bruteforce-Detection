@@ -19,3 +19,10 @@ This project is a simple Bash script to detect brute-force attacks on an SSH ser
 2. Make it executable:
    ```bash
    chmod +x log_monitor.sh
+3.Run script manually:
+```bash
+log_monitor.sh
+4.Setup cron job to run automatically every 5 minutes:
+```bash
+crontab -e
+*/5 * * * * /home/kali/log_monitor.sh
